@@ -1,3 +1,150 @@
+Last login: Thu Oct 25 19:51:27 on ttys002
+ ~  cd Developer
+ ~/Developer  cd Swift
+ ~/Developer/Swift  cd ARKitSCN
+ ~/Developer/Swift/ARKitSCN  git init
+Initialized empty Git repository in /Users/taejoongyoon/Developer/Swift/ARKitSCN/.git/
+ ~/Developer/Swift/ARKitSCN   master  echo "# ARKitSCN" >> README.md
+ ~/Developer/Swift/ARKitSCN   master  git add .
+ ~/Developer/Swift/ARKitSCN   master ✚  git commit -m "Initialize"
+[master (root-commit) b1d2909] Initialize
+ 15 files changed, 797 insertions(+)
+ create mode 100644 ARKitSCN.xcodeproj/project.pbxproj
+ create mode 100644 ARKitSCN.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ create mode 100644 ARKitSCN.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ create mode 100644 ARKitSCN.xcodeproj/project.xcworkspace/xcuserdata/taejoongyoon.xcuserdatad/UserInterfaceState.xcuserstate
+ create mode 100644 ARKitSCN.xcodeproj/xcuserdata/taejoongyoon.xcuserdatad/xcschemes/xcschememanagement.plist
+ create mode 100644 ARKitSCN/AppDelegate.swift
+ create mode 100644 ARKitSCN/Assets.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 ARKitSCN/Assets.xcassets/Contents.json
+ create mode 100644 ARKitSCN/Base.lproj/LaunchScreen.storyboard
+iOSInjectionProject/
+ create mode 100644 ARKitSCN/Base.lproj/Main.storyboard
+
+ create mode 100644 ARKitSCN/Info.plist
+ create mode 100644 ARKitSCN/ViewController.swift
+ create mode 100644 ARKitSCN/art.scnassets/ship.scn
+ create mode 100644 ARKitSCN/art.scnassets/texture.png
+ create mode 100644 README.md
+ ~/Developer/Swift/ARKitSCN   master  git remote add origin https://github.com/TaeJoongYoon/ARKitSCN.git
+ ~/Developer/Swift/ARKitSCN   master  git push origin master
+Enumerating objects: 30, done.
+Counting objects: 100% (30/30), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (30/30), 439.07 KiB | 20.91 MiB/s, done.
+Total 30 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/TaeJoongYoon/ARKitSCN/pull/new/master
+remote:
+To https://github.com/TaeJoongYoon/ARKitSCN.git
+ * [new branch]      master -> master
+ ~/Developer/Swift/ARKitSCN   master  touch .gitignore
+ ~/Developer/Swift/ARKitSCN   master  vim .gitignore
+ ~/Developer/Swift/ARKitSCN   master  vim .gitignore
+ ~/Developer/Swift/ARKitSCN   master  git add .
+ ~/Developer/Swift/ARKitSCN   master ✚  git commit -m "Add .gitigore"
+[master d19c088] Add .gitigore
+ 1 file changed, 112 insertions(+)
+ create mode 100644 .gitignore
+ ~/Developer/Swift/ARKitSCN   master  git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.44 KiB | 1.44 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/TaeJoongYoon/ARKitSCN.git
+   b1d2909..d19c088  master -> master
+ ~/Developer/Swift/ARKitSCN   master  git rm -r --cached .
+rm '.gitignore'
+rm 'ARKitSCN.xcodeproj/project.pbxproj'
+rm 'ARKitSCN.xcodeproj/project.xcworkspace/contents.xcworkspacedata'
+rm 'ARKitSCN.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist'
+rm 'ARKitSCN.xcodeproj/project.xcworkspace/xcuserdata/taejoongyoon.xcuserdatad/UserInterfaceState.xcuserstate'
+rm 'ARKitSCN.xcodeproj/xcuserdata/taejoongyoon.xcuserdatad/xcschemes/xcschememanagement.plist'
+rm 'ARKitSCN/AppDelegate.swift'
+rm 'ARKitSCN/Assets.xcassets/AppIcon.appiconset/Contents.json'
+rm 'ARKitSCN/Assets.xcassets/Contents.json'
+rm 'ARKitSCN/Base.lproj/LaunchScreen.storyboard'
+rm 'ARKitSCN/Base.lproj/Main.storyboard'
+rm 'ARKitSCN/Info.plist'
+rm 'ARKitSCN/ViewController.swift'
+rm 'ARKitSCN/art.scnassets/ship.scn'
+rm 'ARKitSCN/art.scnassets/texture.png'
+rm 'README.md'
+ ~/Developer/Swift/ARKitSCN   master ✚  git add .
+ ~/Developer/Swift/ARKitSCN   master ✚  git commit -m "Apply .gitignore"
+[master 5c92e14] Apply .gitignore
+ 4 files changed, 29 deletions(-)
+ delete mode 100644 ARKitSCN.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+ delete mode 100644 ARKitSCN.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ delete mode 100644 ARKitSCN.xcodeproj/project.xcworkspace/xcuserdata/taejoongyoon.xcuserdatad/UserInterfaceState.xcuserstate
+ delete mode 100644 ARKitSCN.xcodeproj/xcuserdata/taejoongyoon.xcuserdatad/xcschemes/xcschememanagement.plist
+ ~/Developer/Swift/ARKitSCN   master  git push origin master
+Enumerating objects: 5, done.
+
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/TaeJoongYoon/ARKitSCN.git
+   d19c088..5c92e14  master -> master
+ ~/Developer/Swift/ARKitSCN   master  git init
+Reinitialized existing Git repository in /Users/taejoongyoon/Developer/Swift/ARKitSCN/.git/
+ ~/Developer/Swift/ARKitSCN   master  git add .
+ ~/Developer/Swift/ARKitSCN   master  git status
+On branch master
+nothing to commit, working tree clean
+ ~/Developer/Swift/ARKitSCN   master  git commit -m "Initialize"
+On branch master
+nothing to commit, working tree clean
+ ✘  ~/Developer/Swift/ARKitSCN   master  cd ..
+ ~/Developer/Swift  cd ARKitSCN
+ ~/Developer/Swift/ARKitSCN  ls
+ARKitSCN           ARKitSCN.xcodeproj README.md
+ ~/Developer/Swift/ARKitSCN  touch .gitignore
+ ~/Developer/Swift/ARKitSCN  vim .gitignore
+ ~/Developer/Swift/ARKitSCN  git init
+Initialized empty Git repository in /Users/taejoongyoon/Developer/Swift/ARKitSCN/.git/
+ ~/Developer/Swift/ARKitSCN   master  git add .
+ ~/Developer/Swift/ARKitSCN   master ✚  git commit -m "Initialize"
+[master (root-commit) 0b7af1e] Initialize
+ 13 files changed, 881 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .gitignore
+ create mode 100644 ARKitSCN.xcodeproj/project.pbxproj
+ create mode 100644 ARKitSCN/AppDelegate.swift
+ create mode 100644 ARKitSCN/Assets.xcassets/AppIcon.appiconset/Contents.json
+ create mode 100644 ARKitSCN/Assets.xcassets/Contents.json
+ create mode 100644 ARKitSCN/Base.lproj/LaunchScreen.storyboard
+ create mode 100644 ARKitSCN/Base.lproj/Main.storyboard
+ create mode 100644 ARKitSCN/Info.plist
+ create mode 100644 ARKitSCN/ViewController.swift
+ create mode 100644 ARKitSCN/art.scnassets/ship.scn
+ create mode 100644 ARKitSCN/art.scnassets/texture.png
+ create mode 100644 README.md
+ ~/Developer/Swift/ARKitSCN   master  git remote add origin https://github.com/TaeJoongYoon/ARKitSCN.git
+ ~/Developer/Swift/ARKitSCN   master  git push origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (21/21), 427.09 KiB | 23.73 MiB/s, done.
+Total 21 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/TaeJoongYoon/ARKitSCN/pull/new/master
+remote:
+To https://github.com/TaeJoongYoon/ARKitSCN.git
+ * [new branch]      master -> master
+ ~/Developer/Swift/ARKitSCN   master  ls
+ARKitSCN           ARKitSCN.xcodeproj README.md
 
 # Created by https://www.gitignore.io/api/swift,xcode,cocoapods
 
@@ -18,6 +165,9 @@ Pods/
 build/
 DerivedData/
 
+## Various settings
+*.pbxuser
+-- INSERT --
 ## Various settings
 *.pbxuser
 !default.pbxuser
@@ -42,6 +192,9 @@ xcuserdata/
 
 ## Playgrounds
 timeline.xctimeline
+-- INSERT --
+## Playgrounds
+timeline.xctimeline
 playground.xcworkspace
 
 # Swift Package Manager
@@ -60,6 +213,9 @@ playground.xcworkspace
 #
 # Pods/
 #
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
+-- INSERT --
 # Add this line if you want to avoid checking in source code from the Xcode workspace
 # *.xcworkspace
 
@@ -83,6 +239,9 @@ fastlane/screenshots/**/*.png
 fastlane/test_output
 
 # Code Injection
+-- INSERT --
+
+# Code Injection
 #
 # After new code Injection tools there's a generated folder /iOSInjectionProject
 # https://github.com/johnno1962/injectionforxcode
@@ -104,10 +263,29 @@ iOSInjectionProject/
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
+-- INSERT --
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
-**/xcshareddata/WorkspaceSettings.xcsettings
-
-
-# End of https://www.gitignore.io/api/swift,xcode,cocoapods
-
+**/xcshareddata/WorkspaceSetti
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+-- INSERT --
