@@ -65,6 +65,11 @@ class ViewController: UIViewController {
     scene.rootNode.addChildNode(textNode)
     scene.rootNode.addChildNode(boxNode)
     
+    // Add gestureRecognizer
+    let tapGestureRecognizer = UITapGestureRecognizer(target : self,
+                                                      action : #selector(objectDidTapped))
+    self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+    
     // Set the scene to the view
     sceneView.scene = scene
   }
@@ -91,6 +96,25 @@ class ViewController: UIViewController {
     let configuration = ARWorldTrackingConfiguration()
     configuration.planeDetection = [.horizontal, .vertical]
     sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+  }
+  
+  @objc func objectDidTapped(recognizer : UITapGestureRecognizer){
+    let sceneView = recognizer.view as? SCNView
+    
+    let touchLocation : CGPoint = recognizer.location(in: sceneView)
+    
+    //options: backFaceCulling, boundingBoxOnly, categoryBitMask, clipToZRange, ignoreChildNodes...
+    if let hitResults : [SCNHitTestResult] = sceneView?.hitTest(touchLocation, options: [:]){
+      
+      if !hitResults.isEmpty {
+        let firstTappedNode = hitResults[0].node
+        let material = SCNMaterial()
+        
+        material.diffuse.contents = UIColor.black
+        
+        firstTappedNode.geometry?.materials = [material]
+      }
+    }
   }
 }
 
@@ -140,7 +164,8 @@ extension ViewController: ARSessionDelegate{
   }
   
   func sessionWasInterrupted(_ session: ARSession) {
-    // Inform the user that the session has been interrupted, for example, by presenting an overlay.
+    // Inform the user that the session has been interrupted,
+    // for example, by presenting an overlay.
     
   }
   
